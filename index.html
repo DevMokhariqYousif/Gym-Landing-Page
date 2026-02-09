@@ -10,22 +10,22 @@
     />
   </head>
   <body>
-    <!-- NavBar -->
-    <nav class="bg-gray-900/95 w-full p-5">
+    <!-- Header -->
+    <header class="bg-gray-900/95 w-full p-3 sticky top-0 z-50">
       <div class="flex items-center gap-2">
         <i class="fa-solid fa-dumbbell text-red-600" style="rotate: 220deg"></i>
         <a href="#" class="text-white text-xl font-semibold">Power Gym</a>
         <div class="flex justify-between items-center gap-5 ml-auto text-white">
-          <a href="#" class="text-lg hover:text-red-600 transition 0.3s"
+          <a href="#" class="text-sm hover:text-red-600 transition 0.3s"
             >Main</a
           >
-          <a href="#" class="text-lg hover:text-red-600 transition 0.3s"
+          <a href="#price" class="text-sm hover:text-red-600 transition 0.3s"
             >Prices</a
           >
-          <a href="#" class="text-lg hover:text-red-600 transition 0.3s"
+          <a href="#exercise" class="text-sm hover:text-red-600 transition 0.3s"
             >Exercises</a
           >
-          <a href="#" class="text-lg hover:text-red-600 transition 0.3s"
+          <a href="#contact" class="text-sm hover:text-red-600 transition 0.3s"
             >Contact Us</a
           >
           <button class="bg-red-500 p-2 rounded font-semibold hover:bg-red-600">
@@ -33,7 +33,7 @@
           </button>
         </div>
       </div>
-    </nav>
+    </header>
     <!-- Hero Section -->
     <section>
       <div
@@ -80,7 +80,7 @@
     </section>
 
     <!-- Price Section -->
-    <section class="min-h-screen bg-gray-100">
+    <section class="min-h-screen bg-gray-100" id="price">
       <div class="max-w-3xl mx-auto px-4 py-16">
         <div class="text-center mb-12">
           <h1 class="text-3xl font-bold text-black">Pricing Plans</h1>
@@ -194,7 +194,7 @@
       </div>
     </section>
     <!-- Exercises section -->
-    <section class="min-h-screen bg-gray-900">
+    <section class="min-h-screen bg-gray-900" id="exercise">
       <div class="max-w-3xl mx-auto px-4 py-16">
         <div class="text-center mb-12">
           <h1 class="text-3xl font-bold text-white">Exercises Types</h1>
@@ -273,7 +273,7 @@
       </div>
     </section>
     <!-- Contact section -->
-    <section class="min-h-screen bg-gray-100">
+    <section class="min-h-screen bg-gray-100" id="contact">
       <div class="max-w-3xl mx-auto px-4 py-16">
         <div class="text-center mb-12">
           <h1 class="text-3xl font-bold text-black">Contact Us</h1>
@@ -367,18 +367,18 @@
       </div>
     </section>
     <!-- Footer section -->
-    <section class="bg-gray-900 h-72">
+    <section class="bg-gray-900 h-auto">
       <div class="max-w-3xl mx-auto px-3 py-12">
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-4 gap-6">
           <!-- First part -->
-          <div class="flex flex-col items-center">
-            <div class="flex items-center gap-2">
+          <div class="flex flex-col items-start">
+            <h3 class="text-white text-xl font-semibold">
               <i
-                class="fa-solid fa-dumbbell text-red-600"
+                class="fa-solid fa-dumbbell text-red-600 px-2"
                 style="rotate: 220deg"
-              ></i>
-              <h3 class="text-white text-xl font-semibold">Power Gym</h3>
-            </div>
+              ></i
+              >Power Gym
+            </h3>
             <p class="text-gray-500 text-sm">
               A fully equipped sports club that provides you with everything you
               need to achieve your sports goals, with the best trainers and
@@ -386,7 +386,7 @@
             </p>
           </div>
           <!-- Second part -->
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-start">
             <h3 class="text-white text-xl font-semibold">Quick Links</h3>
             <a
               href="#"
@@ -394,46 +394,55 @@
               >About</a
             >
             <a
-              href="#"
+              href="#price"
               class="text-gray-500 text-sm hover:text-red-600 transition duration-300"
               >Prices</a
             >
             <a
-              href="#"
+              href="#exercise"
               class="text-gray-500 text-sm hover:text-red-600 transition duration-300"
               >Exercises</a
             >
             <a
-              href="#"
+              href="#contact"
               class="text-gray-500 text-sm hover:text-red-600 transition duration-300"
               >Contact Us</a
             >
           </div>
           <!-- Third part -->
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-start">
             <h3 class="text-white text-xl font-semibold">Services</h3>
-            <a
-              href="#"
-              class="text-gray-500 text-sm hover:text-red-600 transition duration-300"
-              >Personal Training</a
-            >
-            <a
-              href="#"
-              class="text-gray-500 text-sm hover:text-red-600 transition duration-300"
-              >Group Classes</a
-            >
-            <a
-              href="#"
-              class="text-gray-500 text-sm hover:text-red-600 transition duration-300"
-              >Nutrition Plans</a
-            >
-            <a
-              href="#"
-              class="text-gray-500 text-sm hover:text-red-600 transition duration-300"
-              >Weight loss programs</a
-            >
+            <h3 class="text-gray-500 text-sm >">Personal Training</h3>
+            <h3 class="text-gray-500 text-sm >">Group Classes</h3>
+            <h3 class="text-gray-500 text-sm >">Nutrition Plans</h3>
+            <h3 class="text-gray-500 text-sm >">Weight loss programs</h3>
           </div>
-          <footer class="col-span-3">
+          <!-- Forth part -->
+          <div class="flex flex-col items-start">
+            <h3 class="text-white text-xl font-semibold">Follow Us</h3>
+            <div class="flex space-x-4 mt-2">
+              <a
+                href="#"
+                class="text-white bg-gray-800 px-3 py-1 rounded-lg hover:bg-red-600 transition duration-300"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white bg-gray-800 px-3 py-1 rounded-lg hover:bg-red-600 transition duration-300"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white bg-gray-800 px-3 py-1 rounded-lg hover:bg-red-600 transition duration-300"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <footer class="col-span-4">
+            <hr class="border-gray-700" />
             <p class="text-gray-500 text-sm text-center mt-6">
               &copy; 2026 Power Gym. All rights reserved.
             </p>
